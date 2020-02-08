@@ -20,3 +20,9 @@
 .Logo {
   height: 80%;
 }
+
+.DesktopOnly {
+  @media (max-width: 499px) {
+    display: none;
+  }
+}
