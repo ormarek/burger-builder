@@ -8,12 +8,12 @@ import classes from "./SideDrawer.module.scss";
 
 const sideDrawer = props => {
   let attachedClasses = [classes.SideDrawer, classes.Close];
-  if (props.open) {
+  if (props.state) {
     attachedClasses = [classes.SideDrawer, classes.Open];
   }
   return (
     <Auxiliary>
-      <Backdrop show={props.open} clicked={props.close} />
+      <Backdrop show={props.state} clicked={props.close} />
       <div className={attachedClasses.join(" ")}>
         <div className={classes.Logo}>
           <Logo />
